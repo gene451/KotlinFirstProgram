@@ -1,6 +1,14 @@
+// character.kt
 fun main(args: Array<String>) {
+    println("=== DASAR CHARACTER DI KOTLIN ===")
+
+    // Deklarasi dan inisialisasi Character
     var charA: Char = 'A'
-    println(charA == 'A')      // ✅ Bandingkan dengan Char
-    println(charA == 65.toChar())  // ✅ Konversi Int ke Char dulu
-    println(charA.code == 65)  // ✅ Ambil kode ASCII-nya lalu bandingkan
+    println("Character: '$charA'")
+
+    // Contoh error (dikomentari)
+    // println(charA == 65) // ⚠️ Error: Cannot compare Char and Int
+
+    // Demonstrasi bahwa Char tidak bisa langsung sebagai Number
+    println("Char tidak bisa diperlakukan langsung sebagai Number")
 }
